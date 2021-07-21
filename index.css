@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.img {
+    width: 75px;
+    height: 50px;
+}
+
+.submit {
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.user-name {
+    color: rgb(132, 153, 63);
+}
+
+.user-image {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-container {
+    padding: 50px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    font-family: Poppins;
+    gap: 20px;
+    max-width: 100%;
+    transition: all 200ms;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+}
+
+@media (min-width: 400px) {
+    .user-container {
+        display: flex;
+    }
+}
+
+body {
+    /*    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.user-time {
+    color: white;
+}
+
+.user-container:hover .user-image {
+    border: 2px solid rgb(172, 113, 123);
+}
+
+.user-container:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
